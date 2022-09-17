@@ -164,7 +164,8 @@ p span:last-child {
 .payment {
   width: 345px;
   top: 220px;
-  left: -260px;
+  left: -280%;
+  margin: 0 auto;
   padding: 15px;
 }
 
