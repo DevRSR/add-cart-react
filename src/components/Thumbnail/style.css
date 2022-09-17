@@ -1,0 +1,63 @@
+.container{
+  align-self: flex-start;
+}
+.Thumnail {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.forward, 
+.backward {
+  display: none;
+}
+.Thumnail .product {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+.photos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.photos img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.photos img:hover {
+  border: 2px solid hsl(26, 100%, 55%);
+}
+
+@media(max-width:500px) {
+  .Thumnail{
+    width: 370px;
+    height: 370px;
+  }
+ .backward {
+  display: block;
+  position: absolute;
+  top: 170px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 15px;
+  left: 15px;
+ }
+ .forward {
+  display: block;
+  position: absolute;
+  top: 170px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 15px;
+  right: 15px;
+ }
+  .Thumnail .product {
+    border-radius: 0;
+  }
+  .photos {
+    display: none;
+  }
+}
